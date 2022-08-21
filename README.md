@@ -1,6 +1,6 @@
 # multi-agent-miners
 
-![image](https://user-images.githubusercontent.com/16853682/185815346-86747639-6efc-4b30-bb16-5013a489df4c.png)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/16853682/185815413-d2c605bd-d942-4b3c-8cff-2408e0e52c4e.gif)
 
 
 A multi agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing). For information about Jason, take a lot at their [official documentaion website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
