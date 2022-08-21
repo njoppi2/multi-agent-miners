@@ -1,0 +1,11 @@
+MAS semincoFibonacci {
+
+	infrastructure: Centralised
+
+	agents:
+		fibonacher;
+		client #10;
+
+	aslSourcePath:
+		"src/asl";
+}

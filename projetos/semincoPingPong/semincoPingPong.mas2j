@@ -1,0 +1,13 @@
+MAS semincoPingPong {
+
+	infrastructure: Centralised
+
+	agents:
+		clara jogadorPingPong;
+		bia jogadorPingPong;
+		robert jogadorPingPong;
+		tom naoJogadorPingPong;
+
+	aslSourcePath:
+		"src/asl";
+}

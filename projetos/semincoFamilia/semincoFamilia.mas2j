@@ -1,0 +1,10 @@
+MAS semincoFamilia {
+
+	infrastructure: Centralised
+
+	agents:
+		oraculo familia;
+
+	aslSourcePath:
+		"src/asl";
+}
