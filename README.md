@@ -3,7 +3,7 @@
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/16853682/185816652-86bbded3-a981-4be2-acbe-9c6c755a980a.gif)
 
 
-A multi agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing). For information about Jason, take a lot at their [official documentaion website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
+A multi agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing) for a project of the INE5430 artificial inteligence discipline. For information about Jason, take a lot at their [official documentaion website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
 
 ## Functionalities implemented
 
