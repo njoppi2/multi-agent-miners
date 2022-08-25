@@ -8,7 +8,7 @@
 
 A multi-agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing) for a project of the INE5430 artificial intelligence discipline. For information about Jason, take a lot at their [official documentation website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
 
-## Functionalities implemented
+## 🛠️ Functionalities implemented
 
 - When a robot finds a resource, it notifies
 all robots, so they all mine the resource found.
@@ -17,7 +17,7 @@ all robots, so they all mine the resource found.
 - After they collaborated mining a resource, each robot goes back to their previous location.
 - Robots always mine the **found** resources closest to the builder (white square).
   
-## How it works
+## 🔎 How it works
 We created a flowchart to reduce the number of possible flows
 helping in the planning of our program, and thus making the code more
 simple.
