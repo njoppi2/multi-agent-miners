@@ -6,7 +6,7 @@
 
 
 
-A multi-agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing) for a project of the INE5430 artificial intelligence discipline. For information about Jason, take a lot at their [official documentation website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
+A multi-agent mining implementation using Jason, made by me and [@IgorMayWensing](https://github.com/IgorMayWensing) for a project of the INE5430 artificial intelligence discipline. For information about Jason, take a look at their [official documentation website](http://jason.sourceforge.net/mini-tutorial/getting-started/).
 
 ## 🛠️ Functionalities implemented
 
