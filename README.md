@@ -1,8 +1,6 @@
 # multi-agent-miners
 
-![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/16853682/186509220-f2b5a19f-899a-4db5-ab11-84c7589ecb27.gif)
-
-
+![g1](https://github.com/njoppi2/multi-agent-miners/assets/16853682/c2cdb701-5abe-4ef5-bcbf-fccc409c3e15)
 
 
 
@@ -22,7 +20,7 @@ We created a flowchart to reduce the number of possible flows
 helping in the planning of our program, and thus making the code more
 simple.
 
-![fluxMA](https://user-images.githubusercontent.com/16853682/185812865-626b5b31-93af-46a4-98e4-44637d157182.png)
+![g2](https://github.com/njoppi2/multi-agent-miners/assets/16853682/b4c5ef00-287d-4a0d-b89b-e55ee507bcb3)
 
 
 The flowchart used is the one in the figure above, with which we were able to make the
