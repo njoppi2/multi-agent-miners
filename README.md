@@ -20,7 +20,7 @@ We created a flowchart to reduce the number of possible flows
 helping in the planning of our program, and thus making the code more
 simple.
 
-![g2](https://github.com/njoppi2/multi-agent-miners/assets/16853682/b4c5ef00-287d-4a0d-b89b-e55ee507bcb3)
+![g2](https://github.com/user-attachments/assets/cd5984fd-1448-4c9a-9de9-395718f3e991)
 
 
 The flowchart used is the one in the figure above, with which we were able to make the
