@@ -1,41 +1,44 @@
 # Multi-Agent Miners
 
+[![CI](https://img.shields.io/github/actions/workflow/status/njoppi2/multi-agent-miners/ci.yml?branch=master&label=CI)](https://github.com/njoppi2/multi-agent-miners/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/njoppi2/multi-agent-miners)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/njoppi2/multi-agent-miners)](https://github.com/njoppi2/multi-agent-miners/commits/master)
+
 Academic multi-agent mining project built with **Jason** for the INE5430 AI course, co-developed with [@IgorMayWensing](https://github.com/IgorMayWensing).
 
-![g1](https://github.com/njoppi2/multi-agent-miners/assets/16853682/c2cdb701-5abe-4ef5-bcbf-fccc409c3e15)
+## Snapshot
 
-## What Is Project-Specific Here
+![Project snapshot](https://github.com/njoppi2/multi-agent-miners/assets/16853682/c2cdb701-5abe-4ef5-bcbf-fccc409c3e15)
 
-This repository contains a full Jason distribution plus examples.  
-The project-specific code for this work is mainly under:
+## Problem
+
+Coordinate multiple agents to discover, share, prioritize, and mine distributed resources using collaborative beliefs and plans.
+
+## Tech Stack
+
+- Jason (AgentSpeak)
+- Java / Ant tooling
+- Bash helper scripts
+
+## Repository Layout
+
+Project-specific files are mainly:
 
 - `projetos/semincoMineradores/semincoMineradores.mas2j`
 - `projetos/semincoMineradores/src/asl/col.asl`
 - `projetos/semincoMineradores/src/asl/builder.asl`
 
+The repository also includes Jason runtime and examples.
+
 ## Implemented Behaviors
 
-- Miners broadcast newly found resources to the whole team.
-- Miners broadcast depletion updates when a resource is no longer available.
-- Agents cache non-target resources while searching for the current required one.
-- Agents return to previous search positions after collaborative mining.
-- Group prioritization favors resources closer to the builder.
+- Global broadcast of discovered resources
+- Global broadcast of resource depletion updates
+- Local cache of non-target resources while searching
+- Return-to-search-position after collaborative mining
+- Priority ordering based on distance to builder
 
-## Coordination Strategy
-
-The core coordination belief is:
-
-`group_found(ResourceType, X, Y, Priority)`
-
-Agents:
-
-- publish discoveries with `.broadcast(tell, group_found(...))`,
-- maintain shared candidate sets,
-- and coordinate movement/mining through plans such as `!check_for_resources` and `!mine_and_take_resources`.
-
-Priority is derived from distance to the builder position, allowing consistent shared ordering of candidate resources.
-
-## Running the Project
+## Quickstart
 
 From repository root:
 
@@ -43,24 +46,45 @@ From repository root:
 ./scripts/jason projetos/semincoMineradores/semincoMineradores.mas2j
 ```
 
-Alternative (from the project folder):
+Alternative:
 
 ```bash
 cd projetos/semincoMineradores
 ant -f bin/build.xml run
 ```
 
-## Notes
+## Validation and CI
 
-- This is an educational project focused on multi-agent coordination logic.
-- The repository includes third-party Jason runtime assets and examples for convenience.
+Local checks:
 
-## Next Improvements
+```bash
+bash -n scripts/jason
+bash -n scripts/jason-setup
+bash -n scripts/jason-ide
+bash -n scripts/jason-new-project
+bash -n scripts/mas2j
+```
 
-- Add reproducible experiment scenarios with expected outcomes for each cooperative strategy.
-- Add automated scenario assertions for project-specific plans under `projetos/semincoMineradores`.
-- Split framework/vendor assets from project-specific code to reduce repository footprint.
+CI (`.github/workflows/ci.yml`) validates key project files and helper script shell syntax.
 
-## Reference
+## Results
 
-Jason docs: <http://jason.sourceforge.net/mini-tutorial/getting-started/>
+- Shared coordination belief (`group_found(...)`) is integrated into team behavior.
+- Agents coordinate candidate resources with consistent shared priority.
+- Repository has baseline CI sanity coverage for critical project files/scripts.
+
+## Limitations
+
+- Repo includes framework/vendor assets, increasing footprint.
+- No automated simulation assertions for behavior outcomes yet.
+- Evaluation is still mostly qualitative/manual.
+
+## Roadmap
+
+- Add reproducible scenarios with expected cooperative outcomes.
+- Add automated scenario assertions for project-specific ASL plans.
+- Split or slim vendor/framework assets from project logic.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
