@@ -27,3 +27,6 @@ jobs:
           bash -n scripts/jason-ide
           bash -n scripts/jason-new-project
           bash -n scripts/mas2j
+
+      - name: Run coordination scenario assertions
+        run: python -m unittest discover -s tests -p "test_*.py"

@@ -63,9 +63,10 @@ bash -n scripts/jason-setup
 bash -n scripts/jason-ide
 bash -n scripts/jason-new-project
 bash -n scripts/mas2j
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
-CI (`.github/workflows/ci.yml`) validates key project files and helper script shell syntax.
+CI (`.github/workflows/ci.yml`) validates key project files, helper script shell syntax, and scenario assertions for coordination plans.
 
 ## Results
 

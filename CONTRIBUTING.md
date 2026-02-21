@@ -18,6 +18,7 @@ bash -n scripts/jason-setup
 bash -n scripts/jason-ide
 bash -n scripts/jason-new-project
 bash -n scripts/mas2j
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
 ## Pull Request Guidelines
