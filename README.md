@@ -55,6 +55,12 @@ ant -f bin/build.xml run
 - This is an educational project focused on multi-agent coordination logic.
 - The repository includes third-party Jason runtime assets and examples for convenience.
 
+## Next Improvements
+
+- Add reproducible experiment scenarios with expected outcomes for each cooperative strategy.
+- Add automated scenario assertions for project-specific plans under `projetos/semincoMineradores`.
+- Split framework/vendor assets from project-specific code to reduce repository footprint.
+
 ## Reference
 
 Jason docs: <http://jason.sourceforge.net/mini-tutorial/getting-started/>

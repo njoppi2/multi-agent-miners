@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  repo-sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify key project files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f projetos/semincoMineradores/semincoMineradores.mas2j
+          test -f projetos/semincoMineradores/src/asl/col.asl
+          test -f projetos/semincoMineradores/src/asl/builder.asl
+
+      - name: Validate Jason helper scripts syntax
+        run: |
+          bash -n scripts/jason
+          bash -n scripts/jason-setup
+          bash -n scripts/jason-ide
+          bash -n scripts/jason-new-project
+          bash -n scripts/mas2j
