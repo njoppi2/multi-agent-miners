@@ -8,7 +8,9 @@ Academic multi-agent mining project built with **Jason** for the INE5430 AI cour
 
 ## Snapshot
 
-![Project snapshot](https://github.com/njoppi2/multi-agent-miners/assets/16853682/c2cdb701-5abe-4ef5-bcbf-fccc409c3e15)
+<p align="center">
+  <img src="https://github.com/njoppi2/multi-agent-miners/assets/16853682/c2cdb701-5abe-4ef5-bcbf-fccc409c3e15" alt="Multi-agent miners simulation board with agents and resources" width="720" />
+</p>
 
 ## Problem
 
